@@ -1,0 +1,17 @@
+/*
+ * File:	lexer.h
+ *
+ * Description:	This file contains the public function and variable
+ *		declarations for the lexical analyzer for Simple C.
+ */
+
+# ifndef LEXER_H
+# define LEXER_H
+
+extern int lineno, numerrors;
+
+int lexan(std::string &lexbuf);
+int charval(const std::string &str);
+void report(const std::string &str, const std::string &arg = "");
+
+# endif /* LEXER_H */
